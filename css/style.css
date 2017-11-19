@@ -1,0 +1,173 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ececec url(../images/sos.png) repeat;
+    font-size: 87.5%;
+    font-family: arial, sans-serif;
+    color: #666;
+    line-height: 1.7em;
+}
+
+a {
+    text-decoration: none !important;
+    color: #781a26;
+}
+
+a:hover {
+    color: #666;
+}
+
+h2 {
+    color: #781a26;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    clear: both;
+    transition: .5s;
+}
+
+#logo {
+    width: 45%;
+    margin: 10px 0;
+}
+
+nav {
+    background-color: #882433;
+    border-radius: 5px;
+    border: 1px solid #c13046;
+}
+
+nav ul {
+    background-color: #882433;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 3px;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+nav.navbar-expand-lg a.nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    transition: .2s;
+}
+
+nav.navbar-expand-lg a.nav-link:hover, .active {
+    background-color: #efeadd;
+    color: #666 !important;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-toggler {
+    background-color: #efeadd;
+}
+
+nav i.fa {
+    color: #882433;
+    font-size: 1.5em;
+}
+
+
+#content {
+    width: 70%;
+}
+
+#content article {
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+#content span {
+    font-style: italic;
+    color: #5a5a5a;
+    font-size: .8em;
+}
+
+a.readmore {
+    display: block;
+    float: right;
+    color: #fff;
+    background-color: #c13046;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: .2s;
+}
+
+a.readmore:hover {
+    background-color: #000;
+}
+
+#sidebar {
+    width: 30%;
+}
+
+#sidebar section {
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: auto;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+}
+
+footer {
+    background-color: #882433;
+    height: 40px;
+    border: 1px solid #c13046;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    
+    #container {
+        width: 90%;
+    }
+    #logo {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    #content, #sidebar {
+        width: 100%;
+    }
+    
+    #sidebar section {
+        margin-left: 0;
+    }
+    
+}
